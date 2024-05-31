@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <main>
+        <h1 class="page-title card">Contact</h1>
+
+        <ul class="card navbar">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <section class="card">
+            <ul id="contact-options">
+                <li><a href="https://www.linkedin.com/in/nicholas-a-b308b2ab/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://defcon.social/@celestialdruid" target="_blank">Mastodon</a></li>
+                <li><a href="mailto:nallen333@pm.me" target="_blank">Email</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+          <h2>Send a Message</h2>
+
+          <form id="contact-form">
+            <div>
+              <label for="name">Name:*</label>
+              <input type="text" id="name" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="message">Message:*</label><br>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+
+
+      </main>
+
+    </div>
+
+  </body>
+</html>

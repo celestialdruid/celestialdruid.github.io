@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #fdf6e3;
+    --link-color: black;
+    --link-hover-color: white;
+    --light-accent-color: seagreen;
+    --container-background: url(images/blue\ clear\ glass\ building.png);
+    --text-font: 'Nunito','Helvetica', sans-serif;
+
+    --card-background-color: rgba(7, 54, 66, 0.85);
+    --card-font-size: 1.20rem;
+    --list-item-background: #4c8206;    
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+/* ***********************  Header *********************** */
+
+header {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.logo {
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 0 4 0.75rem 0.1rem black;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+/* ***********************  Content *********************** */
+body {
+    color: var(--text-color);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: var(--container-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    overflow: scroll;
+}
+
+#home-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: auto 15%;
+}
+
+.page-title,
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ***********************  Cards *********************** */ 
+
+.card {
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: var(--card-background-color);
+    list-style: none;
+    width: 50%;
+/*     border-radius: 20px; */
+    box-shadow: 4px 4px 0.1rem 0 black;
+    border: 3px solid var(--light-accent-color);
+}
+
+.card li {
+    background-color: var(--list-item-background);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+   /*  border-radius: 15px; */
+   box-shadow: 4px 4px 0.1rem 0 black;
+    border: 1px solid white;
+}
+
+.card a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--link-hover-color);
+    font-weight: bold;
+}
+
+/* ***********************  About *********************** */
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* ***********************  Width Responsiveness *********************** */
+
+@media (max-width: 850px) { 
+
+    main {
+        flex-direction: column;
+    }
+
+    #home-content {
+        gap: 0;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+
+}
